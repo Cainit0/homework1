@@ -4,13 +4,6 @@ public class Main {
         var test = new ImmutableClass(67, "Immutable", mutableObj);
         mutableObj.setId(mutableObj.getId() * 50);
         mutableObj.setName(mutableObj.getName() + "01011101");
-        System.out.printf(
-                """
-                        ID -> %s
-                        Name -> %s
-                        MutableObject -> %s""",
-                test.getId(),
-                test.getName(),
-                test.getMutableObject());
+        System.out.println(test);
     }
 }
